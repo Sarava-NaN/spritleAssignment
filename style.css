@@ -37,6 +37,10 @@ header {
   cursor: pointer;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  transition: 200ms;
+}
+.nav-links li:hover {
+  transform: scale(1.1);
 }
 .btn {
   color: white;
@@ -49,9 +53,15 @@ header {
   transition: 0.3s ease;
   padding: 16px 32px;
   font-family: "Poppins", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: all 400ms ease;
 }
 .btn:hover {
-  background-color: #c00d78;
+  background-color: black;
+  color: #0ff4c6;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
 /* Body */
 .middle-container {
@@ -394,7 +404,7 @@ section {
   }
 }
 /* Large devices (laptops/desktops, 992px and up) */
-@media screen and (width <= 992px) and (width >= 768px) {
+@media screen and (width <= 992px) and (width >= 769px) {
   /* Style to Header Section */
   header {
     margin: 0 20px;
@@ -459,8 +469,8 @@ section {
     font-size: 1.8em;
   }
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media screen and (width < 1200px) and (width >=993px) {
+/*  */
+@media screen and (width <= 1024px) and (width >=993px) {
   /* Style to Header Section */
   header {
     margin: 0 20px;
@@ -479,7 +489,7 @@ section {
   }
   /* Body */
   .middle-container {
-    height: 42em;
+    height: 52em;
   }
   .robot-icon {
     width: 160px;
@@ -489,7 +499,7 @@ section {
   .font-awesome-icons {
   }
   .font-awesome-icons .fa-solid {
-    font-size: 3.6em;
+    font-size: 3em;
   }
   .font-awesome-icons .fa-solid.fa-robot.active {
     margin-left: -8em;
@@ -512,10 +522,75 @@ section {
     font-size: 4.8em;
   }
   .paragraph p {
-    font-size: 48px;
+    font-size: 38px;
   }
   .bottom-btn {
-    margin-top: 3em;
+    margin-top: 1.8em;
+  }
+  .bottom-btn button {
+    width: 400px;
+    font-size: 2em;
+  }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media screen and (width <= 1200px) and (width >=1025px) {
+  /* Style to Header Section */
+  header {
+    margin: 0 20px;
+    padding: 20px 0;
+  }
+  .logo {
+    width: 150px;
+  }
+  .nav-links li {
+    font-size: 25px;
+  }
+  .btn {
+    width: 170px;
+    font-size: 17px;
+    padding: 15px 30px;
+  }
+  /* Body */
+  .middle-container {
+    height: 12em;
+  }
+  .robot-icon {
+    width: 100px;
+    height: 100px;
+  }
+  /* New Addon */
+  .font-awesome-icons {
+  }
+  .font-awesome-icons .fa-solid {
+    font-size: 2.2em;
+  }
+  .font-awesome-icons .fa-solid.fa-robot.active {
+    margin-left: -8em;
+    margin-top: -1em;
+  }
+  .font-awesome-icons .fa-solid.fa-book-bookmark.active {
+    margin-left: 8em;
+    margin-top: -1em;
+  }
+  .font-awesome-icons .fa-solid.fa-arrows-spin.active {
+    margin-left: -5em;
+    margin-top: -5em;
+  }
+  .font-awesome-icons .fa-solid.fa-bolt.active {
+    margin-left: 5em;
+    margin-top: -5em;
+  }
+  /*Footer Section */
+  .title h1 {
+    margin-top: -1em;
+    font-size: 4.4em;
+  }
+  .paragraph p {
+    font-size: 28px;
+    margin-top: -0.6em;
+  }
+  .bottom-btn {
+    margin-top: 1em;
   }
   .bottom-btn button {
     width: 400px;
